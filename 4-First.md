@@ -45,8 +45,6 @@ ansible -b -i inv -m apt -a "name=apache2 state=present update_cache=yes" all
        update_cache: yes
   # we can excute the above playbook below the command
   # anible-playbook -i hosts apache-install.yaml
-  
-  
   ```
 
        

@@ -25,7 +25,29 @@ echo "Ansible Learning" > /var/www/html/index.html
      * adhoc
      * playbooks
 ## adhoc commands
-ansible -b -i inv -m apt -a "name=apache2 state=present update_cache=yes"
+```bash
+ansible -b -i inv -m apt -a "name=apache2 state=present update_cache=yes" all
+```
+
+* if you want to represent the above adhoc command in the playbook / yaml format
+  ```yaml
+  ---
+  # vi apache-install.yaml
+  - name: Installing apcache webserver
+    become: true
+    hosts: all
+    tasks:
+    - name: installing apache2
+      #module
+      apt:
+       name: apache2
+       state: present
+       update_cache: yes
+  # we can excute the above playbook below the command
+  # anible-playbook -i hosts apache-install.yaml
+  
+  
+  ```
 
        
        

@@ -40,3 +40,12 @@ yes
 ssh-copy-id username@privateip
 ```
 
+## Test the ansible Installation
+```bash
+# ansible need to the host machine details to communicate and perform certain tasks
+# The default host/inventory file is availiable at this location
+
+vi /etc/ansible/hosts
+
+
+

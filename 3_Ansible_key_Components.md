@@ -1,6 +1,7 @@
 ## Ansible Key components/terms
 `Inventery`: List of nodes to which ansible controller server should communicate
-   * By default location availiable at `/etc/ansible/hosts`, but we can pass our custom inventery as well by using `-i`
+   * By default location availiable at `/etc/ansible/hosts`, but we can pass our custom inventery as well by using `-i`.
+     
 `Modules`:
    *  Module is the smallest automation unit in ansible
    *  For every task we want perform, we need to check the relevant module from asnible.

@@ -46,6 +46,5 @@ ssh-copy-id username@privateip
 # The default host/inventory file is availiable at this location
 
 vi /etc/ansible/hosts
-
-
-
+ ansible -m ping all
+```

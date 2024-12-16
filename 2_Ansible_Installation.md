@@ -19,5 +19,24 @@ PasswordAuthentication yes
 # Restart the sshd service
 service sshd restart
 
-
+# Install the  Ansible on the Controller only.
+yum install ansible -y
 ```
+## Configure ansible
+
+```bash
+```
+
+## Generate ssh key
+```bash
+# Generate the ssh key in the ansible server
+ssh-keygen
+yes
+yes
+
+# Even though we have the key generated, still connecting to the host machine it's asking for the password
+# Now, copy the key generated to the host machine as the ansible user.
+
+ssh-copy-id username@privateip
+```
+
